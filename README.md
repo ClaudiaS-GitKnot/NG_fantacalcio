@@ -1,3 +1,7 @@
+# NG_fantacalcio
+
+A very simple Angular/Bootstrap exercise that displays some cards of football players rendered from a model using simple techniques.
+
 # NgFantacalcio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
