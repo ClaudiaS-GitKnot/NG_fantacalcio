@@ -1,0 +1,24 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let calciatore of calciatori">
+    <div class="card">
+      <img [src]="calciatore.foto" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5
+          class="card-title"
+          [ngClass]="{
+            'bg-warning': calciatore.ruolo == 'P',
+            'bg-success': calciatore.ruolo == 'D'
+          }"
+        >
+          {{ calciatore.nome_completo }}
+        </h5>
+        <p class="card-text">Squadra: {{ calciatore.squadra }}</p>
+
+        <p *ngIf="calciatore.v6! > 15">
+          <i class="bi bi-star-fill"></i>
+          <strong>FUORICLASSE</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
